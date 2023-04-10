@@ -1,0 +1,37 @@
+.back-orange{
+   background-color:#E59866    ; 
+}
+.text-orange{
+   color:#A04000;
+}
+.back-yellow{
+   background-color: #F1C40F ;
+}
+.back-orange-2{
+   background-color:#A04000;
+}
+.text-orange-2{
+   color:#E59866;
+}
+.center{
+   height: 91vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.bg-image{
+   height: 100vh;
+background-image: linear-gradient(rgba(240, 178, 122, 0.6), rgba(230, 126, 34, 0.7)), url("./images/pizza.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.border-orange{
+   border: 2px solid #E59866;
+   padding: 15px;
+}
+.bg-map{
+  
+      background-image: linear-gradient(rgba(240, 178, 122, 0.6), rgba(230, 126, 34, 0.7)), url("./images/map.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
