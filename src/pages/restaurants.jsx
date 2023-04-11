@@ -3,15 +3,14 @@ import Navbar from "../components/navbar";
 
 export default function Restaurants() {
   const [inputValue, setInputValue] = useState();
-
+  const [renderedAddress, setRenderedAddress] = useState();
+  const [showContent, setShowContent] = useState(false);
   const Addresses = [
     { city: "eskişehir", address: "Espark Mall" },
     { city: "bursa", address: "Korupark Mall" },
     { city: "izmir", address: "Alsancak, No:120" },
   ];
 
-  const [renderedAddress, setRenderedAddress] = useState();
-  const [showContent, setShowContent] = useState(false);
   function handleSearchAddress(e) {
     e.preventDefault();
     const data = Addresses.filter((value) => value.city === inputValue);
@@ -25,7 +24,7 @@ export default function Restaurants() {
   return (
     <div className="bg-map">
       <Navbar />
-      <div className="center ">
+      <div className="center">
         <form className="text-center text-light">
           <label className="form-label p-2 fs-3">
             <b>Search City Name </b>
@@ -43,7 +42,7 @@ export default function Restaurants() {
           >
             Search
           </button>
-          <div className="fs-3">
+          <div className="fs-3 ">
             {showContent && renderedAddress && renderedAddress.length === 1 ? (
               <div>
                 <b>
@@ -61,7 +60,7 @@ export default function Restaurants() {
                 </div>
               )
             )}
-          </div>
+          </div>{" "}
         </form>
       </div>
     </div>

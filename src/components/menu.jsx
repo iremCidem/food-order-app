@@ -24,8 +24,7 @@ export default function Menu({ menuName, content, price }) {
   const dispatch = useDispatch();
 
   return (
-    <div className="card ">
-      {showPop && popup}
+    <div className="card stabil ">
       <img src={menupic} alt="menu" height="180px" />
       <div className="card-body">
         <h2 className="card-title">{menuName} menu</h2>
@@ -39,6 +38,7 @@ export default function Menu({ menuName, content, price }) {
         >
           Add to Cart
         </button>
+        {showPop && popup}
       </div>
     </div>
   );
